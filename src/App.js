@@ -3,10 +3,12 @@ import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
 import "./App.css";
 
+const logWhenClicked = () => console.log("helloo");
+
 const App = () => {
   return (
     <div>
-      <Logo />
+      <Logo prop={logWhenClicked} />
       <BestPokemon />
       <CaughtPokemon />
     </div>

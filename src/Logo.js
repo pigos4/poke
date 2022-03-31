@@ -1,15 +1,13 @@
-const url = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/017.png";
+import React from "react";
 
-const Img = () => <img alt="pokemon" onClick={logWhenClicked} src={url} />;
+const url = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/019.png";
 
-const logWhenClicked = () => console.log("helloo");
-
-const Logo = () => {
+const Logo = (prop) => {
   const appName = "Daniel's Pokedex";
   return (
     <header>
       <h1>{appName}</h1>
-      <Img />
+      <img alt="pokemon" onClick={prop.prop} src={url} />
     </header>
   );
 };
